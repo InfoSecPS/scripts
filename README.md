@@ -10,3 +10,7 @@ A ping sweeper that takes an IP or IP Range as an input, passes it to Nmap and o
 Takes input of domain/URL and runs a dig command and outputs to screen.
 [zonetransfer.sh](https://github.com/InfoSecPS/scripts/blob/master/bash/zonetransfer.sh)
 ---
+##Pentest Scans
+A working project that incorporates both of the above scans into one BASH script.
+[pentest.sh](https://github.com/InfoSecPS/scripts/blob/master/bash/pentest.sh)
+---
