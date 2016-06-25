@@ -15,7 +15,7 @@ echo "=================================================="
 echo "=== Scanning $HOST. Please wait...======="
 echo "=================================================="
 sleep 2
-nmap -sS $HOST 
+nmap -sS -p- $HOST -Pn -n --open
 sleep 2
 echo "   "
 echo "$(tput setaf 3)[+]$(tput sgr0) Now scanning port 80 for any web directories"
