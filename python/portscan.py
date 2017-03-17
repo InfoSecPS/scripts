@@ -22,10 +22,10 @@ def connScan(tgtHost, tgtPort):
 
 		results = connSkt.recv(1024)
 		screenLock.acquire()
-		print colored ('[+] ','green') + str(tgtPort) + "/tcp Open"
+		print colored ('[+] ','green') + str(tgtPort) + ":tcp Open"
 	except:
 		screenLock.acquire()
-		print colored ('[-] ','red') + str(tgtPort) + "/tcp Closed"
+		print colored ('[-] ','red') + str(tgtPort) + ":tcp Closed"
 	finally:
 		screenLock.release()
 		connSkt.close()
