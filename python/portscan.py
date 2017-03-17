@@ -12,8 +12,6 @@ os.system('cls||clear')
 
 screenLock = Semaphore(value=1)
 
-print '\n' + colored ("[+] Scan started: ", "yellow") + time.strftime("%c") + '\n'
-
 def connScan(tgtHost, tgtPort):
 	try:
 		connSkt = socket(AF_INET, SOCK_STREAM)
@@ -42,7 +40,8 @@ def portScan(tgtHost, tgtPorts):
 		print "\n" + colored ('[+] Scan Results for: ','yellow') + tgtName[0] + '\n'
 	except:
 		print "\n" + colored ('[+] Scan Results for: ','yellow') + tgtIP + '\n'
-
+	finally:
+		print '\n' + colored ("[+] Scan started: ", "yellow") + time.strftime("%c") + '\n'
 	setdefaulttimeout(1)
 	for tgtPort in tgtPorts:
 		t = Thread(target=connScan, args=(tgtHost, int(tgtPort)))
