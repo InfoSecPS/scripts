@@ -3,7 +3,7 @@ import os
 
 os.system('cls||clear')
 
-ip = "192.168.187.139"
+ip = "192.168.187.139" #change this obviously
 head = "HEAD / HTTP/1.0\r\n\r\n"
 get = "GET / HTTP/1.0\r\n\r\n"
 options = "OPTIONS / HTTP/1.0\r\n\r\n"
