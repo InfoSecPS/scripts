@@ -1,10 +1,11 @@
 from socket import *
 import os
 from termcolor import colored
+import sys
 
 os.system('clear')
 
-ip = raw_input("Enter an IP Address: ")
+ip = sys.argv[1]
 head = "HEAD / HTTP/1.0\r\n\r\n"
 get = "GET / HTTP/1.0\r\n\r\n"
 options = "OPTIONS / HTTP/1.0\r\n\r\n"
