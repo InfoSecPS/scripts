@@ -14,3 +14,6 @@ I've created this script from scratch. It'll be a working progress I'm sure. Jus
 * Now it takes the IP Address as an argument passed to the script. So far, the way I've been used to running python scripts. 
 
 ****
+### argparse.py
+
+In search of some sort of experience in validation I was directed to using argparse. This is just an exercise in implementing argparse to make sure the data you need has been entered. If not, you get told about it. Next step is to validate that it is indeed an IP address that is being entered. 
