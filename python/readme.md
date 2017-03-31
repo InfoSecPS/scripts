@@ -17,3 +17,8 @@ I've created this script from scratch. It'll be a working progress I'm sure. Jus
 ### argparse.py
 
 In search of some sort of experience in validation I was directed to using argparse. This is just an exercise in implementing argparse to make sure the data you need has been entered. If not, you get told about it. Next step is to validate that it is indeed an IP address that is being entered. 
+
+****
+### md5.py
+
+I was bored. I wanted a quick way to md5 a string to play around with password cracking without leaving the terminal. Seeing I'm working on Python just now it was a good idea. Takes a string, and outputs the MD5 hash. Simples. 
